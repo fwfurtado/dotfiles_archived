@@ -16,14 +16,15 @@ alias p10krc='_edit_file $CUSTOM_DOTFILES_HOME/p10k.zsh'
 alias funrc='_edit_file $CUSTOM_DOTFILES_HOME/functions.zsh'
 
 #Dotfiles VCS 
-alias dt='git --git-dir=$DOTFILES_REPO --work-tree=$HOME' 
-alias dts='dt status' 
-alias dta='dt add' 
-alias dtc='dt commit -m' 
+alias '.g'='git --git-dir=$DOTFILES_REPO --work-tree=$HOME ' 
+alias '.gs'='.g status ' 
+alias '.ga'='.g add ' 
+alias '.gcmsg'='.g commit -m ' 
+alias '.gp'='.g push '
+alias '.gpl'='.g pull '
 
 #commons
 alias vim=nvim
-alias please='sudo $(fc -ln -1)'
 alias ls='lsd --group-dirs first'
 alias lt='ls --tree'
 alias grep='grep --color'
