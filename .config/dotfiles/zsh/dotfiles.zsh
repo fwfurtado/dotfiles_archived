@@ -1,5 +1,5 @@
 export CONFIG_HOME="$HOME/.config/" 
-export CUSTOM_DOTFILES_HOME="$CONFIG_HOME/dotfiles/" 
+export CUSTOM_DOTFILES_HOME="$CONFIG_HOME/dotfiles/zsh" 
 
 source "$CUSTOM_DOTFILES_HOME/functions.zsh"
 source "$CUSTOM_DOTFILES_HOME/envs.zsh"
