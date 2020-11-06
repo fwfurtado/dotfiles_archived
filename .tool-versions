@@ -10,3 +10,4 @@ elixir 1.11.2-otp-23
 julia 1.5.2
 golang 1.15.3
 nodejs 15.0.1
+ruby 2.7.2
