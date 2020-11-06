@@ -3,20 +3,20 @@ function _edit_file() { file_name=$1
   ${=EDITOR} $file_name
 }
 
-alias nvimrc='_edit_file ~/.dotfiles/nvim/nvimrc' 
-alias aliasrc='_edit_file ~/.dotfiles/alias.zsh'
-alias pluginrc='_edit_file ~/.dotfiles/plugins.zsh'
-alias envrc='_edit_file ~/.dotfiles/envs.zsh' 
 alias zshrc='_edit_file ~/.zshrc' # Quick access to the ~/.zshrc file
-alias bindkeysrc='_edit_file ~/.dotfiles/bindkeys.zsh'
-alias dotfilesrc='_edit_file ~/.dotfiles/dotfiles.zsh'
-alias pathrc='_edit_file ~/.dotfiles/paths.zsh'
-alias loaderrc='_edit_file ~/.dotfiles/loaders.zsh'
-alias p10krc='_edit_file ~/.dotfiles/p10k.zsh'
-alias funrc='_edit_file ~/.dotfiles/functions.zsh'
+alias nvimrc='_edit_file $CONFIG_HOME/nvim/init.vim' 
+alias aliasrc='_edit_file $CUSTOM_DOTFILES_HOME/alias.zsh'
+alias pluginrc='_edit_file $CUSTOM_DOTFILES_HOME/plugins.zsh'
+alias envrc='_edit_file $CUSTOM_DOTFILES_HOME/envs.zsh' 
+alias bindkeysrc='_edit_file $CUSTOM_DOTFILES_HOME/bindkeys.zsh'
+alias dotfilesrc='_edit_file $CUSTOM_DOTFILES_HOME/dotfiles.zsh'
+alias pathrc='_edit_file $CUSTOM_DOTFILES_HOME/paths.zsh'
+alias loaderrc='_edit_file $CUSTOM_DOTFILES_HOME/loaders.zsh'
+alias p10krc='_edit_file $CUSTOM_DOTFILES_HOME/p10k.zsh'
+alias funrc='_edit_file $CUSTOM_DOTFILES_HOME/functions.zsh'
 
 #Dotfiles VCS 
-alias dt='git --git-dir=$HOME/.my-dotfiles/ --work-tree=$HOME' 
+alias dt='git --git-dir=$DOTFILES_REPO --work-tree=$HOME' 
 alias dts='dt status' 
 alias dta='dt add' 
 alias dtc='dt commit -m' 
