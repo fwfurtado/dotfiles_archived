@@ -44,6 +44,7 @@ alias sudo='sudo '
 alias neofetch='neofetch | lolcat'
 alias pbcopy='xsel --clipboard --input'
 alias pbpast='xsel --clipboard --output'
+alias open='xdg-open'
 
 # Make zsh know about hosts already accessed by SSH
 zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {/etc/ssh_,~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
