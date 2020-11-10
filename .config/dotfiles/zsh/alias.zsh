@@ -41,7 +41,6 @@ alias watch='watch '
 alias sudo='sudo ' 
 
 
-alias neofetch='neofetch | lolcat'
 alias pbcopy='xsel --clipboard --input'
 alias pbpast='xsel --clipboard --output'
 alias open='xdg-open'
