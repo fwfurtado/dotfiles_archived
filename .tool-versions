@@ -1,4 +1,5 @@
 java adoptopenjdk-15.0.1+9
+java adoptopenjdk-8.0.272+10
 clojure 1.10.1
 scala 2.13.3
 sbt 1.4.2
@@ -11,3 +12,4 @@ julia 1.5.2
 golang 1.15.3
 nodejs 15.0.1
 ruby 2.7.2
+lein 2.9.4
