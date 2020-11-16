@@ -1,0 +1,18 @@
+{
+".g":"git --git-dir=$DOTFILES_REPO --work-tree=$HOME " ,
+".gs":".g status " ,
+".ga":".g add " ,
+".gcmsg":".g commit -m " ,
+".gp":".g push ",
+".gpl":".g pull ",
+"vim":"nvim" ,
+"ls":"lsd --group-dirs first",
+"lt":"ls --tree",
+"grep":"grep --color",
+"l":"ls -lh" ,
+"ll":"l" ,
+"la":"ls -lah" ,
+"home":"cd $HOME" ,
+"pacman":"sudo pacman" ,
+"etckeeper":"sudo etckeeper"
+}

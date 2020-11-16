@@ -1,3 +1,10 @@
 [user]
 	email = fwfurtado@gmail.com
 	name = Fernando
+[filter "lfs"]
+	smudge = git-lfs smudge --skip %f
+	process = git-lfs filter-process
+	clean = git-lfs clean -- %f
+	required = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/

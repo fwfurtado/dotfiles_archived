@@ -9,6 +9,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'mattn/emmet-vim'
 Plug 'zinit-zsh/zinit-vim-syntax'
+Plug 'dylanaraps/wal.vim'
 
 call plug#end()
 
@@ -23,7 +24,7 @@ let g:user_emmet_install_global = 1
 
 let g:python3_host_prog='~/.asdf/shims/python3' 
 
-colorscheme onedark
+colorscheme wal
 
 syntax on
 
@@ -42,8 +43,6 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-
-set termguicolors
 
 set autochdir
 set hlsearch

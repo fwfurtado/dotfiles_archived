@@ -19,3 +19,6 @@ source ~/.asdf/plugins/java/set-java-home.zsh
 
 
 poetry completions zsh > "$ZINIT_HOME/completions/_poetry" && compinit 
+
+wal -n -e -i $(cat $HOME/.config/nitrogen/bg-saved.cfg | grep 'file=' | cut -f 2 -d '=') > /dev/null
+

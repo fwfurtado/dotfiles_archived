@@ -99,3 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $HOME/.config/dotfiles/zsh/dotfiles.zsh
+export NUCLI_HOME=/home/fwfurtado/dev/nu/nucli
+export NU_HOME=/home/fwfurtado/dev/nu
+source $HOME/.nurc
+export PATH=/home/fwfurtado/dev/nu/nucli:/home/fwfurtado/.asdf/shims:/opt/asdf-vm/bin:/home/fwfurtado/dev/nu/nucli:/home/fwfurtado/.zinit/plugins/jarun---nnn:/home/fwfurtado/.zinit/plugins/sharkdp---bat/bat:/home/fwfurtado/.zinit/plugins/sharkdp---fd/fd:/home/fwfurtado/.zinit/plugins/junegunn---fzf-bin:/home/fwfurtado/.zinit/polaris/sbin:/home/fwfurtado/.zinit/polaris/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/fwfurtado/Android/Sdk/tools/bin/
