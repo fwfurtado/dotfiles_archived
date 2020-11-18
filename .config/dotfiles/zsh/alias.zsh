@@ -34,6 +34,7 @@ alias la='ls -lah'
 alias home='cd $HOME' 
 alias pacman='sudo pacman' 
 alias etckeeper='sudo etckeeper' 
+alias brave-anonymous='brave --incognito'
 
 # by default some commands does not expand alias, but on alias with trailing space cause the expand next alias of next word
 alias xargs='xargs ' 
