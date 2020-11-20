@@ -15,7 +15,7 @@ source  $ASDF_HOME/asdf.sh
 source ~/.asdf/plugins/java/set-java-home.zsh
 
 # Load SCM_Breeze 
-[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+[ -s "$SCM_BREEZE_HOME/scm_breeze.sh" ] && source "$SCM_BREEZE_HOME/scm_breeze.sh"
 
 
 poetry completions zsh > "$ZINIT_HOME/completions/_poetry" && compinit 

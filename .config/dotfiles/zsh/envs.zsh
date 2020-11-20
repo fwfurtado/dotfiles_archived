@@ -9,5 +9,6 @@ export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 export ZSHSIFY_DIR="$HOME/.zinit/plugins/zdharma---zsh-startify/"
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-export DOTFILES_REPO="$HOME/.my-dotfiles/" 
+export DOTFILES_REPO="$HOME/.dotfiles/" 
 export ASDF_HOME=/opt/asdf-vm
+export SCM_BREEZE_HOME=/usr/share/scm_breeze/ 
