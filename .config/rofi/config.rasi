@@ -1,1 +1,11 @@
-@import "~/.cache/wal/colors-rofi-light"
+configuration {
+	modi: "run,window,ssh,combi";
+	font: "hack 15";
+	padding: 250;
+	show-icons: true;
+	fake-transparency: true;
+  combi-modi: "window,run,ssh";
+}
+
+
+@import "~/.cache/wal/colors-rofi-light.rasi"
