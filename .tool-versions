@@ -1,4 +1,4 @@
-java adoptopenjdk-15.0.1+9
+java adoptopenjdk-8.0.272+10
 java adoptopenjdk-8.0.272+10
 clojure 1.10.1
 scala 2.13.3
