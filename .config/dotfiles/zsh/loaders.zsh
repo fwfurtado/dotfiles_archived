@@ -21,5 +21,5 @@ source ~/.asdf/plugins/java/set-java-home.zsh
 poetry completions zsh > "$ZINIT_HOME/completions/_poetry" && compinit 
 
 [ -f $HOME/.cache/wal/colors.Xresources ] && ln -sf $HOME/.cache/wal/colors.Xresources $HOME/.Xresources 
-[ -f $HOME/.config/nitrogen/bg-saved.cfg ] && wal -a 8 -n -e -i $(cat $HOME/.config/nitrogen/bg-saved.cfg | grep -m 1 'file=' | cut -f 2 -d '=') > /dev/null
+[ -f $HOME/.config/wal/launcher.sh ] && source $HOME/.config/wal/launcher.sh 
 
