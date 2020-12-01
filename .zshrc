@@ -99,3 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source $HOME/.config/dotfiles/zsh/dotfiles.zsh
+source $HOME/.nurc
+alias 'nu-vpn'='sudo openfortivpn -c "$NU_HOME/.nu-vpn"'
+
+export PATH="$PATH:$HOME/Android/Sdk/tools/bin/"

@@ -1,0 +1,2 @@
+bind \cd delete-char
+

@@ -12,3 +12,4 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 export DOTFILES_REPO="$HOME/.dotfiles/" 
 export ASDF_HOME=/opt/asdf-vm
 export SCM_BREEZE_HOME=/usr/share/scm_breeze/ 
+export GPG_TTY=$(tty) 

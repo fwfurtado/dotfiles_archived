@@ -10,6 +10,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'mattn/emmet-vim'
 Plug 'zinit-zsh/zinit-vim-syntax'
 Plug 'dylanaraps/wal.vim'
+Plug 'dag/vim-fish'
 
 call plug#end()
 
