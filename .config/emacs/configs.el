@@ -27,6 +27,9 @@
   (setq-default auto-save-default nil)
   (setq-default make-backup-files nil)
 
+  ;; Enable Mouse
+  (xterm-mouse-mode 1)
+
   ;; Set transparency
   (set-frame-parameter (selected-frame) 'alpha '(85 85))
   (add-to-list 'default-frame-alist '(alpha 85 85))
