@@ -1,3 +1,22 @@
+set -x color0 "{color1}"
+set -x color2 "{color2}"
+set -x color3 "{color3}"
+set -x color4 "{color4}"
+set -x color5 "{color5}"
+set -x color6 "{color6}"
+set -x color7 "{color7}"
+set -x color8 "{color8}"
+set -x color9 "{color9}"
+set -x color10 "{color10}"
+set -x color11 "{color11}"
+set -x color12 "{color12}"
+set -x color13 "{color13}"
+set -x color14 "{color14}"
+set -x color15 "{color15}"
+
+set -x background "{background}"
+set -x foreground "{foreground}"
+
 set fish_color_normal {foreground.strip}
 set fish_color_command {color2.strip}
 set fish_color_param {color4.strip} --bold
