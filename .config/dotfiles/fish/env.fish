@@ -7,6 +7,7 @@ set -x GPG_TTY (tty)
 set -xU EDITOR 'emacsclient -t'
 set -xU VISUAL 'emacsclient -t'
 set -xU ERL_AFLAGS '-kernel shell_history enabled'
+set -xU SUDO_EDITOR 'emacsclient'
 
 # tide 
 set --global tide_prompt_char_icon 'λ'
