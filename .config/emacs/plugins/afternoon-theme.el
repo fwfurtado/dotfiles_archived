@@ -1,4 +1,5 @@
 (use-package afternoon-theme
-  :ensure t)
+  :ensure t
+  :init (load-theme 'afternoon t))
 
   

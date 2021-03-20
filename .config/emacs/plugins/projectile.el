@@ -1,7 +1,6 @@
 (use-package projectile
   :ensure t
-  :init (projectile-mode +1)
-  :config (progn
-	    (setq projectile-switch-project-action 'neotree-projectile-action))
-  :bind (:map projectile-mode-map
-              ("C-c p" . projectile-command-map)))
+  :custom ((projectile-completion-system 'ivy))
+  :bind-keymap ("C-c p" . projectile-command-map)
+  :init (setq projectile-project-search-path (parse-colon-path (getenv "PROJECT_DIR")))
+  :config (projectile-mode))

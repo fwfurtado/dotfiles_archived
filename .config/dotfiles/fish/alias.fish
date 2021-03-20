@@ -10,7 +10,8 @@ alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias open='xdg-open'
 # alias cd='enhancd'
-alias emc='emacsclient -t'
+alias emc='emacsclient -cn'
+alias semc='sudoedit'
 alias md='mkdir -p'
 
 #Dotfiles VCS

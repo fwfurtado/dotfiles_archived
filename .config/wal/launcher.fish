@@ -5,6 +5,8 @@ switch $current_desktop
     set current_background (grep '=' $HOME/.config/deepinwmrc | sed -n '1 p' | cut -d '=' -f 2 | sed 's/file:\/\///')
   case gnome
     set current_background (gsettings get org.gnome.desktop.background picture-uri | string replace "file://" "" | string unescape)
+  case kde
+    set current_background (qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.dumpCurrentLayoutJS | grep "Image" | string trim | string unescape | string replace 'Image: file://' "" )
   case '*'
     echo "Sorry I don't know what is your current desktop"
 end 

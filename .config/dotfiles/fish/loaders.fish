@@ -9,6 +9,6 @@ test -e $HOME/.cache/wal/colors-tty.sh; and sh $HOME/.cache/wal/colors-tty.sh >>
 test -e $HOME/.cache/wal/colors.fish; and source $HOME/.cache/wal/colors.fish 
 test -e $HOME/.cache/wal/colors.Xresources; and ln -sf $HOME/.cache/wal/colors.Xresources $HOME/.Xresources
 
-
+bass source $HOME/.nix-profile/etc/profile.d/nix.sh
 
 

@@ -12,3 +12,5 @@
 	path = /home/fwfurtado/.nugitconfig
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = main

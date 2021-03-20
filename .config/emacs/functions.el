@@ -3,13 +3,17 @@
 
 (defun customizations/load-plugins (directory)
   (let* ((add-plugin-directory (apply-partially #'concat directory "/"))
-	(elisp-file? (apply-partially #'string/ends-with? ".el"))
-	(all-files-in-directory (directory-files directory))
-	(all-plugins-filename (seq-filter elisp-file? all-files-in-directory))
-	(all-plugins (seq-map add-plugin-directory all-plugins-filename)))
+	 (elisp-file? (apply-partially #'string/ends-with? ".el"))
+	 (all-files-in-directory (directory-files directory))
+	 (all-plugins-filename (seq-filter elisp-file? all-files-in-directory))
+	 (all-plugins (seq-map add-plugin-directory all-plugins-filename)))
     (dolist (plugin all-plugins)
       (load plugin))))
-	
-	
-				 
-		   
+
+
+(defun fwf/new-frame-buffer ()
+  (interactive)
+  (let ((buffer (generate-new-buffer "untitled")))
+    (set-buffer-major-mode buffer)
+    (switch-to-buffer buffer)))
+
