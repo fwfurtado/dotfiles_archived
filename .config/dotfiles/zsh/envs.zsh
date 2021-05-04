@@ -10,6 +10,6 @@ export ZSHSIFY_DIR="$HOME/.zinit/plugins/zdharma---zsh-startify/"
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 export DOTFILES_REPO="$HOME/.dotfiles/" 
-export ASDF_HOME=/opt/asdf-vm
+export ASDF_HOME=$HOME/.asdf
 export SCM_BREEZE_HOME=/usr/share/scm_breeze/ 
 export GPG_TTY=$(tty) 

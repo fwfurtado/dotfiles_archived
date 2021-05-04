@@ -21,7 +21,7 @@
  '(custom-safe-themes
    '("57e3f215bef8784157991c4957965aa31bac935aca011b29d7d8e113a652b693" default))
  '(package-selected-packages
-   '(ob-mermaid org-superstar esh-autosuggest exec-path-from-shell flutter hover company-lsp yasnippet lsp-dart neotree poetry company-box company python-mode dap-mode general lsp-ivy ivy-rich lsp-treemacs lsp-mode lsp-ui hydra python xclip which-key vterm smartparens rainbow-delimiters paredit org org-bullets multiple-cursors move-text markdown-mode magit indent-guide helpful flycheck ewal emojify doom-modeline counsel-projectile counsel cider clojure-mode all-the-icons aggressive-indent ace-window afternoon-theme use-package)))
+   '(yaml-mode ob-mermaid org-superstar esh-autosuggest exec-path-from-shell flutter hover company-lsp yasnippet lsp-dart neotree poetry company-box company python-mode dap-mode general lsp-ivy ivy-rich lsp-treemacs lsp-mode lsp-ui hydra python xclip which-key vterm smartparens rainbow-delimiters paredit org org-bullets multiple-cursors move-text markdown-mode magit indent-guide helpful flycheck ewal emojify doom-modeline counsel-projectile counsel cider clojure-mode all-the-icons aggressive-indent ace-window afternoon-theme use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

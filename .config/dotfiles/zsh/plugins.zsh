@@ -5,8 +5,9 @@ source $ZINIT_HOME/bin/zinit.zsh
 # Enchanced CD 
 #zinit ice atclone'rm -rf conf.d; rm -rf functions; rm -f *.fish;' pick'init.sh' nocompile'!' wait'!0' 
 #zinit light b4b4r07/enhancd 
-zinit ice atclone'rm -rf conf.d; rm -rf functions; rm -f *.fish;' proto'git' pick'init.sh'
-zinit light b4b4r07/enhancd
+# current
+#zinit ice atclone'rm -rf conf.d; rm -rf functions; rm -f *.fish;' proto'git' pick'init.sh'
+#zinit light b4b4r07/enhancd
 
 #Powerlevel10k
 zinit ice depth=1
@@ -22,7 +23,7 @@ zinit light djui/alias-tips
 # Oh-My-zsh plugins 
 zinit ice svn; zinit snippet OMZ::plugins/aws 
 zinit ice svn; zinit snippet OMZ::plugins/git
-zinit ice svn; zinit snippet OMZ::plugins/brew
+# zinit ice svn; zinit snippet OMZ::plugins/brew
 zinit ice svn; zinit snippet OMZ::plugins/kubectl
 zinit ice svn; zinit snippet OMZ::plugins/zsh_reload
 zinit ice svn; zinit snippet OMZ::plugins/asdf
@@ -37,8 +38,8 @@ zinit as"command" from"gh-r" light-mode for \
   mv"bat* -> bat" pick"bat/bat" @sharkdp/bat 
 
 # nnn - file browser 
-zinit ice make as"command" mv"nnn -> nnn" pick"nnn"
-zinit light jarun/nnn
+#zinit ice make as"command" mv"nnn -> nnn" pick"nnn"
+#zinit light jarun/nnn
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then

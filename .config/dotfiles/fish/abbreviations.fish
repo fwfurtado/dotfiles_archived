@@ -41,3 +41,24 @@ abbr .gsh '.g show'
 abbr .gt '.g tag'
 abbr .gtop '.g reve-parse --show-toplevel'
 abbr .gurl '.g config --get remote.origin.url'
+
+
+#Docker
+abbr dk   'docker'
+abbr dkc  'docker container'
+abbr dkcr 'docker container run'
+abbr dkcs 'docker container stop'
+abbr dkcet 'docker container exec -it'
+abbr dkcls 'docker container ls'
+
+abbr dkv  'docker volume'
+abbr dkvc 'docker volume create'
+abbr dkvr 'docker volume remove'
+abbr dkvls 'docker volume ls'
+
+# Docker Compose
+abbr dc 'docker-compose'
+abbr dcu 'docker-compose up'
+abbr dcd 'docker-compose down'
+abbr dcls 'docker-compose ps'
+abbr dcex 'docker-compose exec'

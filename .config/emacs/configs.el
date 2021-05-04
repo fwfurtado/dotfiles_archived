@@ -31,7 +31,7 @@
   (ido-mode 1)
 
   ;; Set font 
-  (set-frame-font "Jetbrains Mono 14" nil t)
+  (set-frame-font "Jetbrains Mono 12" nil t)
 
   ;; Disable auto save and backup 
   (setq-default auto-save-default nil)

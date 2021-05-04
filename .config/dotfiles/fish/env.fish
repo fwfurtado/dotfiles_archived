@@ -1,22 +1,31 @@
 set -xU DOTFILES_REPO "$HOME/.dotfiles/"
 set -xU FISH_DOTFILES $HOME/.config/dotfiles/fish""
 
-set -xU FZF_DEFAULT_OPTS '--height 40% --no-bold --layout reverse --border'
+set -x FZF_DEFAULT_OPTS '--height 40% --no-bold --layout reverse --border'
 set -x ASDF_HOME "$HOME/.asdf/"
 set -x GPG_TTY (tty)
-set -xU EDITOR 'emacsclient -t'
-set -xU VISUAL 'emacsclient -t'
-set -xU ERL_AFLAGS '-kernel shell_history enabled'
-set -xU SUDO_EDITOR 'emacsclient'
+set -x EDITOR 'emacsclient -cn'
+set -x VISUAL 'emacsclient -cn'
+set -x ERL_AFLAGS '-kernel shell_history enabled'
+set -x SUDO_EDITOR 'emacsclient -cn'
+set -x CHROME_EXECUTABLE '/usr/bin/brave'
+
 
 set -xg PROJECT_DIR '~/projects/:~/dev/nu/'
-set -x  PATH '/home/fwfurtado/Android/Sdk/platform-tools' $PATH
+set -x PATH '/home/fwfurtado/Android/Sdk/platform-tools' $PATH
+set -x PATH '/home/fwfurtado/Android/Sdk/tools/bin/' $PATH
+set -x PATH '/home/fwfurtado/.rgit' $PATH
+set -x PATH '/home/fwfurtado/confluent-hub-client/bin' $PATH
+set -x GO_PATH '/home/fwfurtado/go'
+set -x PATH '/home/fwfurtado/.pub-cache/bin' $PATH
+
+#Snap
+set -x  PATH '/var/lib/snapd/snap/bin'  $PATH
+
 # tide 
 set --global tide_prompt_char_icon 'λ'
 set --global tide_left_prompt_frame_enabled true
 set --global tide_status_always_display true
 
 
-set -x XDG_DATA_DIRS '/var/lib/flatpak/exports/share' $XDG_DATA_DIRS
-set -x XDG_DATA_DIRS $XDG_DATA_DIRS '/home/fwfurtado/.local/share/flatpak/exports/share'
-set -x XDG_DATA_DIRS $XDG_DATA_DIRS "$HOME/.nix-profile/share" 
+#set -x XDG_DATA_DIRS '/var/lib/snapd/desktop' 

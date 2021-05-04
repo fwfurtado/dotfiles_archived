@@ -14,3 +14,6 @@
 	gpgsign = true
 [init]
 	defaultBranch = main
+[filesystem "AdoptOpenJDK|11.0.10|tmpfs"]
+	timestampResolution = 5000 nanoseconds
+	minRacyThreshold = 5682 microseconds

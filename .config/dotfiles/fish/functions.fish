@@ -1,21 +1,21 @@
 function aliasrc
-    command emacsclient -t "$FISH_DOTFILES/alias.fish"
+    command emacsclient -cn "$FISH_DOTFILES/alias.fish"
 end
 
 function abbrrc
-    command emacsclient -t "$FISH_DOTFILES/abbreviations.fish"
+    command emacsclient -cn "$FISH_DOTFILES/abbreviations.fish"
 end
 
 function funcrc
-    command emacsclient -t "$FISH_DOTFILES/functions.fish"
+    command emacsclient -cn "$FISH_DOTFILES/functions.fish"
 end
 
 function envrc
-    command emacsclient -t "$FISH_DOTFILES/env.fish"
+    command emacsclient -cn "$FISH_DOTFILES/env.fish"
 end
 
 function emacsrc
-    command emacsclient -t $HOME/.config/emacs/emacs.el
+    command emacsclient -cn $HOME/.config/emacs/emacs.el
 end
 
 
