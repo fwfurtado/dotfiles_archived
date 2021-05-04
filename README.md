@@ -5,6 +5,7 @@
 pushd $HOME 
 git clone --bare https://github.com/fwfurtado/dotfiles.git $HOME/.dotfiles 
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout 
-source .zshrc 
+git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config status.showUntrackedFiles no
+src
 popd 
 ``` 
