@@ -1,6 +1,7 @@
 [user]
 	email = fwfurtado@gmail.com
 	name = Fernando
+	signingKey = CA66604E41125492
 [filter "lfs"]
 	smudge = git-lfs smudge --skip %f
 	process = git-lfs filter-process --skip
@@ -17,3 +18,5 @@
 [filesystem "AdoptOpenJDK|11.0.10|tmpfs"]
 	timestampResolution = 5000 nanoseconds
 	minRacyThreshold = 5682 microseconds
+[gpg]
+	program = gpg2

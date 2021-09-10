@@ -6,7 +6,7 @@ switch $current_desktop
   case gnome
     set current_background (gsettings get org.gnome.desktop.background picture-uri | string replace "file://" "" | string unescape)
   case kde
-    set current_background (qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.dumpCurrentLayoutJS | grep "Image" | string trim | string unescape | string replace 'Image: file://' "" )
+    set current_background (qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.dumpCurrentLayoutJS | grep -m 1 "Image" | cut -d '"' -f 4 | sed 's/file:\/\///' )
   case '*'
     echo "Sorry I don't know what is your current desktop"
 end 

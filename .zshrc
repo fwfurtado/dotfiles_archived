@@ -79,7 +79,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -119,6 +119,7 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
 fi
 
 source $HOME/.config/dotfiles/zsh/dotfiles.zsh
+eval "$(starship init zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/dotfiles/zsh/p10k.zsh.
 #[[ ! -f ~/.config/dotfiles/zsh/p10k.zsh ]] || source ~/.config/dotfiles/zsh/p10k.zsh

@@ -1,5 +1,47 @@
-abbr gpsup 'git push --set-upstream (git remote) (git rev-parse --abbrev-ref HEAD)'
 # abbr emacs 'emc'
+
+
+# git
+abbr ga 'git add'
+
+abbr gcl 'git clone'
+
+abbr gcmsg 'git commit -m'
+abbr gcam 'git commit --amend -C HEAD'
+abbr gca 'git commit --amend '
+
+abbr gpl 'git pull'
+abbr gplr 'git pull --rebase'
+abbr gps 'git push'
+abbr gpsf 'git push -f'
+abbr gpsup 'git push --set-upstream (git remote) (git rev-parse --abbrev-ref HEAD)'
+abbr grv 'git remote -v'
+
+abbr grb 'git rebase'
+abbr grbo 'git rebase --onto'
+abbr grba 'git rebase --abort'
+abbr grbc 'git rebase --continue'
+abbr grbi 'git rebase -i'
+
+abbr grs  'git reset --'
+abbr grsf 'git reset --hard'
+
+abbr gr   'git restore'
+abbr grt 'git restore --staged'
+
+abbr gs 'git status'
+
+abbr gsh 'git stash'
+abbr gshu 'git stash --include-untracked'
+abbr gshl 'git stash list'
+abbr gshp 'git stash pop'
+
+abbr gsw 'git switch'
+abbr gsc 'git switch -c'
+
+abbr gb  'git branch'
+
+abbr gt 'git tag'
 
 # git dotfiles
 abbr .ga '.g add'

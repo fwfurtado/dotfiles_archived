@@ -6,12 +6,12 @@ source $ZINIT_HOME/bin/zinit.zsh
 #zinit ice atclone'rm -rf conf.d; rm -rf functions; rm -f *.fish;' pick'init.sh' nocompile'!' wait'!0' 
 #zinit light b4b4r07/enhancd 
 # current
-#zinit ice atclone'rm -rf conf.d; rm -rf functions; rm -f *.fish;' proto'git' pick'init.sh'
-#zinit light b4b4r07/enhancd
+zinit ice atclone'rm -rf conf.d; rm -rf functions; rm -f *.fish;' proto'git' pick'init.sh'
+zinit light b4b4r07/enhancd
 
 #Powerlevel10k
-zinit ice depth=1
-zinit light romkatv/powerlevel10k
+#zinit ice depth=1
+#zinit light romkatv/powerlevel10k
 
 #Some other 3rd party plugins 
 zinit light zdharma/fast-syntax-highlighting 
@@ -21,12 +21,12 @@ zinit light djui/alias-tips
 
 
 # Oh-My-zsh plugins 
-zinit ice svn; zinit snippet OMZ::plugins/aws 
-zinit ice svn; zinit snippet OMZ::plugins/git
-# zinit ice svn; zinit snippet OMZ::plugins/brew
-zinit ice svn; zinit snippet OMZ::plugins/kubectl
-zinit ice svn; zinit snippet OMZ::plugins/zsh_reload
-zinit ice svn; zinit snippet OMZ::plugins/asdf
+#zinit ice svn; zinit snippet OMZ::plugins/aws 
+#zinit ice svn; zinit snippet OMZ::plugins/git
+## zinit ice svn; zinit snippet OMZ::plugins/brew
+#zinit ice svn; zinit snippet OMZ::plugins/kubectl
+#zinit ice svn; zinit snippet OMZ::plugins/zsh_reload
+#zinit ice svn; zinit snippet OMZ::plugins/asdf
 
 #FZF 
 zinit ice from"gh-r" as"program"

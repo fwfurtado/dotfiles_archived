@@ -6,7 +6,7 @@ set -o ignoreeof
 __compile_completions_if_necesary
 
 # Load oh-my-zsh 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # Load asdf 
 source  $ASDF_HOME/asdf.sh

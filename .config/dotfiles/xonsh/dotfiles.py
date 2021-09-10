@@ -1,3 +1,1 @@
-import .prompt 
-import .alias 
-
+source $HOME/.config/dotfiles/xonsh/alias.py

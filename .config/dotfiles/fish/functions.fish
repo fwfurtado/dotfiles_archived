@@ -1,24 +1,44 @@
 function aliasrc
-    command emacsclient -cn "$FISH_DOTFILES/alias.fish"
+    command micro "$FISH_DOTFILES/alias.fish"
 end
 
 function abbrrc
-    command emacsclient -cn "$FISH_DOTFILES/abbreviations.fish"
+    command micro "$FISH_DOTFILES/abbreviations.fish"
 end
 
 function funcrc
-    command emacsclient -cn "$FISH_DOTFILES/functions.fish"
+    command micro "$FISH_DOTFILES/functions.fish"
 end
 
 function envrc
-    command emacsclient -cn "$FISH_DOTFILES/env.fish"
+    command micro "$FISH_DOTFILES/env.fish"
+end
+
+
+function loaderrc
+    command micro "$FISH_DOTFILES/loader.fish"
 end
 
 function emacsrc
-    command emacsclient -cn $HOME/.config/emacs/emacs.el
+    command micro $HOME/.config/emacs/emacs.el
 end
 
 
 function src
     source $HOME/.config/fish/config.fish
+end
+
+function start-jupyter
+    mkdir -p $HOME/projects/apps/jupyter
+     
+    pushd $HOME/projects/apps/jupyter
+
+    jupyter lab
+
+    popd 
+end
+
+
+function append_path
+   fish_add_path $argv   
 end
