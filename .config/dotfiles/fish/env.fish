@@ -2,7 +2,7 @@ set -xU DOTFILES_REPO "$HOME/.dotfiles/"
 set -xU FISH_DOTFILES $HOME/.config/dotfiles/fish""
 
 set -x FZF_DEFAULT_OPTS '--height 40% --no-bold --layout reverse --border'
-set -xg ASDF_HOME "$HOME/.asdf/"
+set -xg ASDF_HOME "$HOME/.asdf"
 set -x GPG_TTY (tty)
 set -xg EDITOR 'micro'
 set -xg VISUAL 'micro'
