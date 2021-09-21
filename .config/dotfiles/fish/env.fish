@@ -8,7 +8,7 @@ set -xg EDITOR 'micro'
 set -xg VISUAL 'micro'
 set -xg ERL_AFLAGS '-kernel shell_history enabled'
 set -xg SUDO_EDITOR 'emacsclient -cn'
-set -xg CHROME_EXECUTABLE /var/lib/snapd/snap/bin/brave
+set -xg CHROME_EXECUTABLE /usr/bin/google-chrome-stable
 set -xg BROWSER brave
 
 # Go settings
