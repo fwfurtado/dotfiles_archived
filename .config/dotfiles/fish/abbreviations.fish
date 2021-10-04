@@ -23,6 +23,8 @@ abbr grba 'git rebase --abort'
 abbr grbc 'git rebase --continue'
 abbr grbi 'git rebase -i'
 
+abbr gsq  'git reset (git merge-base main (git rev-parse --abbrev-ref HEAD))'
+
 abbr grs  'git reset --'
 abbr grsf 'git reset --hard'
 

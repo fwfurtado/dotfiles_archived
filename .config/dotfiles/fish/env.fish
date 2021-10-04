@@ -10,7 +10,7 @@ set -xg ERL_AFLAGS '-kernel shell_history enabled'
 set -xg SUDO_EDITOR 'emacsclient -cn'
 set -xg CHROME_EXECUTABLE /usr/bin/google-chrome-stable
 set -xg BROWSER brave
-
+set -xg ANDROID_SDK ~/Android/Sdk
 # Go settings
 #set -xg GOROOT '/home/fwfurtado/.asdf/installs/golang/1.16.4/go/bin/'
 set -xg GOPATH /home/fwfurtado/go
@@ -25,6 +25,10 @@ set -x PATH $GOPATH/bin $PATH
 
 #Snap
 set -x PATH /var/lib/snapd/snap/bin $PATH
+
+# Fix order of tools and emulator for android
+set PATH (string match -v $HOME/Android/Sdk/tools $PATH)
+fish_add_path $HOME/Android/Sdk/tools
 
 # tide 
 #set --global tide_prompt_char_icon 'λ'
