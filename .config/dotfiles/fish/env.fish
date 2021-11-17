@@ -39,3 +39,6 @@ fish_add_path $HOME/Android/Sdk/tools
 #set -x XDG_DATA_DIRS '/var/lib/snapd/desktop' 
 #set -x XDG_DATA_DIRS '/var/lib/flatpak/exports/share' $XDG_DATA_DIRS
 #set -x XDG_DATA_DIRS '~/.local/share/flatpak/exports/share' $XDG_DATA_DIRS
+
+# Podman compatibility with docker
+set -x DOCKER_HOST unix://$XDG_RUNTIME_DIR/podman/podman.socket
