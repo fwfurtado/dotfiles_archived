@@ -42,3 +42,24 @@ end
 function append_path
    fish_add_path $argv   
 end
+
+function gbrm 
+    set -l OLD_NAME (git rev-parse --abbrev-ref HEAD | string trim)
+    set -l NEW_NAME $argv
+    set -l REMOTE (git remote | string trim)
+
+    # Rename local branch
+    git branch -M $OLD_NAME $NEW_NAME
+    
+    # Delete old branch on remote
+    git push $REMOTE :$OLD_NAME
+
+    # Remove upstream of new branch (this avoid that git uses the old name when push)
+    git branch --unset-upstream $NEW_NAME
+
+    # Push new branch to remote 
+    git push $REMOTE $NEW_NAME 
+
+    # Set upstream to new branch
+    git push $REMOTE -u $NEW_NAME
+end 
