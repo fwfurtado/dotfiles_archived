@@ -157,10 +157,6 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 if status --is-interactive
    neofetch --memory_unit gib
 end
-source $HOME/.config/dotfiles/fish/dotfiles.fish 
-# source $HOME/.nurc 
 
-function nu-vpn
-  command sudo openfortivpn -c "$NU_HOME/.nu-vpn"
-end
+source $HOME/.config/dotfiles/fish/dotfiles.fish 
 
