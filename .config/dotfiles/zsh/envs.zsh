@@ -12,4 +12,7 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 export DOTFILES_REPO="$HOME/.dotfiles/" 
 export ASDF_HOME=$HOME/.asdf
 export SCM_BREEZE_HOME=/usr/share/scm_breeze/ 
+export ZSH_AUTOSUGGESTION_HOME=/usr/share/zsh/plugins/zsh-autosuggestions/
+export ZSH_SYNTAX_HIGHLIGHT_HOME=/usr/share/zsh/plugins/zsh-syntax-highlighting/
+
 export GPG_TTY=$(tty) 

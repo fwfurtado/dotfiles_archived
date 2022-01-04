@@ -17,9 +17,14 @@ source ~/.asdf/plugins/java/set-java-home.zsh
 # Load SCM_Breeze 
 [ -s "$SCM_BREEZE_HOME/scm_breeze.sh" ] && source "$SCM_BREEZE_HOME/scm_breeze.sh"
 
+# Load Auto suggestion
+[ -s "$ZSH_AUTOSUGGESTION_HOME/zsh-autosuggestions.zsh" ] && source "$ZSH_AUTOSUGGESTION_HOME/zsh-autosuggestions.zsh"
 
-poetry completions zsh > "$ZINIT_HOME/completions/_poetry" && compinit 
+# Load Syntax Highligthing
+[ -s "$ZSH_SYNTAX_HIGHLIGHT_HOME/zsh-syntax-highlighting.zsh" ] && source "$ZSH_SYNTAX_HIGHLIGHT_HOME/zsh-syntax-highlighting.zsh"
 
-[ -f $HOME/.config/wal/launcher.sh ] && source $HOME/.config/wal/launcher.sh
-[ -f $HOME/.cache/wal/sequences ] && cat $HOME/.cache/wal/sequences
-[ -f $HOME/.cache/wal/colors.Xresources ] && ln -sf $HOME/.cache/wal/colors.Xresources $HOME/.Xresources 
+# which poetry && poetry completions zsh > "$ZINIT_HOME/completions/_poetry" && compinit 
+
+#[ -f $HOME/.config/wal/launcher.sh ] && source $HOME/.config/wal/launcher.sh
+#[ -f $HOME/.cache/wal/sequences ] && cat $HOME/.cache/wal/sequences
+#[ -f $HOME/.cache/wal/colors.Xresources ] && ln -sf $HOME/.cache/wal/colors.Xresources $HOME/.Xresources 
