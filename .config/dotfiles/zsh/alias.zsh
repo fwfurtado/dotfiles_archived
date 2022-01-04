@@ -22,7 +22,7 @@ alias '.g'='git --git-dir=$DOTFILES_REPO --work-tree=$HOME '
 alias '.gs'='.g status ' 
 alias '.ga'='.g add ' 
 alias '.gcmsg'='.g commit -m ' 
-alias '.gp'='.g push '
+alias '.gps'='.g push '
 alias '.gpl'='.g pull '
 
 #commons
