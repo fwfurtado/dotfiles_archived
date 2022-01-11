@@ -16,3 +16,7 @@ export ZSH_AUTOSUGGESTION_HOME=/usr/share/zsh/plugins/zsh-autosuggestions/
 export ZSH_SYNTAX_HIGHLIGHT_HOME=/usr/share/zsh/plugins/zsh-syntax-highlighting/
 
 export GPG_TTY=$(tty) 
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+export GOPATH=$HOME/go
+
+export PATH=$PATH:$GOPATH/bin

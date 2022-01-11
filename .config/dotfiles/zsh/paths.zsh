@@ -7,4 +7,3 @@
 # export PATH="/usr/local/opt/helm@2/bin:$PATH" # While istio does not support helm 3
  
 # export PATH="/usr/local/opt/mysql-client@5.7/bin:$PATH"
-

@@ -71,3 +71,46 @@ function __gdt() {
 
 alias gdt='__gdt'
 
+alias ga='git add'
+
+alias gcl='git clone'
+
+alias gcmsg='git commit -m'
+alias gcam='git commit --amend -C HEAD'
+alias gca='git commit --amend '
+
+alias gpl='git pull'
+alias gplr='git pull --rebase'
+alias gps='git push'
+alias gpsf='git push -f'
+alias gpsup='git push --set-upstream $(git remote) $(git rev-parse --abbrev-ref HEAD)'
+alias grv='git remote -v'
+
+alias grb='git rebase'
+alias grbo='git rebase --onto'
+alias grba='git rebase --abort'
+alias grbc='git rebase --continue'
+alias grbi='git rebase -i'
+
+alias gsq='git reset $(git merge-base main $(git rev-parse --abbrev-ref HEAD))'
+
+alias grs='git reset --'
+alias grsf='git reset --hard'
+
+alias gr='git restore'
+alias grt='git restore --staged'
+
+alias gs='git status'
+
+alias gsh='git stash'
+alias gshu='git stash --include-untracked'
+alias gshl='git stash list'
+alias gshp='git stash pop'
+
+alias gsw='git switch'
+alias gsc='git switch -c'
+
+alias gb='git branch'
+
+alias gt='git tag'
+
