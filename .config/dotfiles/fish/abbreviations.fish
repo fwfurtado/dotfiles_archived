@@ -1,6 +1,3 @@
-# abbr emacs 'emc'
-
-
 # git
 abbr ga 'git add'
 

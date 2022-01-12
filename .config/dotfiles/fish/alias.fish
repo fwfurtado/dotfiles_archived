@@ -1,5 +1,4 @@
 #Commons 
-alias vim='nvim'
 alias lt='ls --tree'
 alias grep='grep --color'
 alias ll='ls -lh'
@@ -9,9 +8,6 @@ alias home='cd $HOME'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias open='xdg-open'
-# alias cd='enhancd'
-alias emc='emacsclient -cn'
-alias semc='sudoedit'
 alias md='mkdir -p'
 
 #Dotfiles VCS
