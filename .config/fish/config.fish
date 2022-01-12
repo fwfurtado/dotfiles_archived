@@ -11,7 +11,7 @@ set -U __done_notification_urgency_level low
 
 ## Environment setup
 # Apply .profile
-source ~/.profile
+test -e $HOME/.profile; and source ~/.profile
 
 # Add ~/.local/bin to PATH
 if test -d ~/.local/bin

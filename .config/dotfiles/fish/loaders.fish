@@ -15,8 +15,10 @@ test -e $HOME/.asdf/plugins/dotnet-core/set-dotnet-home.fish; and source $HOME/.
 # bass source $HOME/.nix-profile/etc/profile.d/nix.sh
 
 
-for file in /etc/profile.d/*.sh
-    bass source $file
-end
+test -e /etc/profile; and bass source /etc/profile
+
+# for file in /etc/profile.d/*.sh
+    # bass source $file
+# end
 
 # nohup streamdeck --no-ui &> /dev/null
