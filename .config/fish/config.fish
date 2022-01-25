@@ -155,8 +155,17 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 ## Run paleofetch if session is interactive
 if status --is-interactive
-   neofetch --memory_unit gib
+    if not test -f $HOME/.greet      
+        touch $HOME/.greet
+    end 
+
+    set -l greet_date (date -r $HOME/.greet +%Y%m%d)
+    set -l today_date (date +%Y%m%d)
+
+    if [ $today_date -gt $greet_date ]
+        touch $HOME/.greet
+        neofetch --memory_unit gib
+    end
 end
 
 source $HOME/.config/dotfiles/fish/dotfiles.fish 
-
