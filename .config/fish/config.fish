@@ -166,6 +166,11 @@ if status --is-interactive
         touch $HOME/.greet
         neofetch --memory_unit gib
     end
+    if  not set -q ZELLIJ
+        and [ "$TERM" = "alacritty" ]
+        exec zellij
+    end
+    
 end
 
 source $HOME/.config/dotfiles/fish/dotfiles.fish 
