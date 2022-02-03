@@ -165,6 +165,7 @@ if status --is-interactive
     if [ $today_date -gt $greet_date ]
         touch $HOME/.greet
         neofetch --memory_unit gib
+        read -P "Press enter to contitue " -t a -n 1 -l -s > /dev/null
     end
     if  not set -q ZELLIJ
         and [ "$TERM" = "alacritty" ]
