@@ -16,13 +16,17 @@ end
 
 
 function loaderrc
-    command micro "$FISH_DOTFILES/loader.fish"
+    command micro "$FISH_DOTFILES/loaders.fish"
 end
 
 function emacsrc
     command micro $HOME/.config/emacs/emacs.el
 end
 
+
+function nvimrc
+    command micro $HOME/.config/nvim/init.vim   
+end
 
 function src
     source $HOME/.config/fish/config.fish
