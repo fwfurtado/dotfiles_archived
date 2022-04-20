@@ -1,27 +1,45 @@
-## FIRST LINE/ROW: Info & Status 
-# First param ─┌
+# Colors
+# https://www.schemecolor.com/tags
+# https://www.schemecolor.com/pastel-color-tones.php
+# current base colors
+#    https://www.schemecolor.com/play-the-banjo.php
+#    https://www.schemecolor.com/jukebox.php
+#    https://www.schemecolor.com/pastels-of-blue-violet.php
+
+# Icons https://www.nerdfonts.com/cheat-sheet
+# Line drawing https://en.wikipedia.org/wiki/Box-drawing_character
+
+format = """
+[╭─ ](bold #4E8278)$all
+[│ ](bold #4E8278)$directory$sudo
+[╰─ ](bold #4E8278)$character
+""" 
+
+command_timeout=1000
+
 [username]
-format = " [╭─ $user]($style)"
-style_user = "bold green"
-style_root = "bold green"
+format = " [$user]($style)"
+style_user = "bold #4E8278"
+style_root = "bold #4E8278"
 show_always = true
 
-# Second param
 [hostname]
-format = "@[$hostname]($style) in "
-style = "bold dimmed green"
-trim_at = "-"
+format = "[@](bold #D7C6B2)[$hostname]($style) "
+style = "bold #4E8278"
+trim_at = "."
 ssh_only = false
-disabled = false
 
-# Third param
 [directory]
-style = "purple"
+format = "[in](#D7C6B2) [$path]($style)[$read_only]($read_only_style) "
+style = "#E4A758"
 truncation_length = 0
-truncate_to_repo = true
-truncation_symbol = "repo: "
+truncate_to_repo = false
 
-# Before all the version info (python, nodejs, php, etc.)
+
+[character]
+success_symbol = "[λ](bold #DFBF87)"
+error_symbol = "[λ](bold #9C1027)"
+
 [git_status]
 style = "white"
 ahead = "⇡${count}"
@@ -29,119 +47,44 @@ diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
 deleted = "x"
 
-# Prompt: param 2 └─
-[character]
-success_symbol = " [╰─ λ](bold green)"
-error_symbol = " [╰─ ×](bold green)"
-#use_symbol_for_status = true
+[git_branch]
+style = "bold #705767"
 
-# Last param in the first line/row
-[cmd_duration]
-min_time = 1
-format = "took [$duration]($style)"
-disabled = true
+[git_commit]
+style = "bold #46949B"
+tag_symbol	= " "
+
+[package]
+format = "[$symbol$version]($style) "
+style = "bold #CC7F60"
+symbol =" "
+
+[sudo]
+symbol = " "
+disabled = false
+style = "fg:#D7C6B2"
 
 
-## SECOND LINE/ROW: Prompt
-# Somethere at the beginning
-[battery]
-full_symbol = " "
-charging_symbol = " "
-discharging_symbol = " "
-disabled = true
-
-[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
-threshold = 15
-style = "bold red"
-disabled = true
-
-[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
-threshold = 50
-style = "bold yellow"
-disabled = true
-
-[[battery.display]]  # "bold green" style when capacity is between 10% and 30%
-threshold = 80
-style = "bold green"
-disabled = true
-
-# Prompt: optional param 1
-[time]
-format = " 🕙 $time($style)\n"
-time_format = "%T"
-style = "bright-white"
-disabled = true
-
-# SYMBOLS
-[status]
-symbol = "🔴"
-format = '[\[$symbol$status_common_meaning$status_signal_name$status_maybe_int\]]($style)'
-map_symbol = true
-disabled = true
-
-[aws]
-symbol = " "
-disabled = true
-
-[conda]
-symbol = " "
+[docker_context]
+symbol = ""
+format	= "[$symbol]($style) "
+style = "bold #BFD9FF"
 
 [dart]
 symbol = " "
 
-[docker_context]
-symbol = " "
+# Disabled modules
+[line_break]
+disabled = true # Remove line break at final of $all
 
-[elixir]
-symbol = " "
+[cmd_duration]
+disabled = true
 
-[elm]
-symbol = " "
+[battery]
+disabled = true
 
-[git_branch]
-symbol = " "
+[time]
+disabled = true
 
-[golang]
-symbol = " "
-
-#[haskell]
-#symbol = " "
-
-[hg_branch]
-symbol = " "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
-
-[nim]
-symbol = " "
-
-[nix_shell]
-symbol = " "
-
-[nodejs]
-symbol = " "
-
-[package]
-symbol = " "
-
-[perl]
-symbol = " "
-
-[php]
-symbol = " "
-
-[python]
-symbol = " "
-
-[ruby]
-symbol = " "
-
-[rust]
-symbol = " "
-
-[swift]
-symbol = "ﯣ "
+[status]
+disabled = true
