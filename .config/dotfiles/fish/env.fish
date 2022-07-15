@@ -28,4 +28,4 @@ set PATH (string match -v $HOME/Android/Sdk/tools $PATH)
 fish_add_path $HOME/Android/Sdk/tools
 
 # Podman compatibility with docker
-set -x DOCKER_HOST unix://$XDG_RUNTIME_DIR/podman/podman.socket
+#set -x DOCKER_HOST unix://$XDG_RUNTIME_DIR/podman/podman.socket

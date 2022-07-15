@@ -1,5 +1,5 @@
 # Fix flatpak XDG_RUNTIME_DIR
-test -e /etc/profile; and bass source /etc/profile
+# test -e /etc/profile; and bass source /etc/profile
 
 
 # Load asdf 
