@@ -29,3 +29,5 @@ fish_add_path $HOME/Android/Sdk/tools
 
 # Podman compatibility with docker
 #set -x DOCKER_HOST unix://$XDG_RUNTIME_DIR/podman/podman.socket
+
+export ZELLIJ_AUTO_EXIT="true"

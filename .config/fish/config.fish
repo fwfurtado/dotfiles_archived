@@ -153,8 +153,16 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 #end
 
 
+source $HOME/.config/dotfiles/fish/dotfiles.fish
+export PERSONAL_ACCESS_TOKEN=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
+
+
 ## Run paleofetch if session is interactive
 if status --is-interactive
+    if test -z "$JETBRAINS_TERM" 
+      eval (zellij setup --generate-auto-start fish | string collect)
+    end
+
     if not test -f $HOME/.greet      
         touch $HOME/.greet
     end 
@@ -167,11 +175,5 @@ if status --is-interactive
         neofetch --memory_unit gib
         read -P "Press enter to contitue " -t a -n 1 -l -s > /dev/null
     end
-    if  not set -q ZELLIJ
-        and [ "$TERM" = "alacritty" ]
-        exec zellij
-    end
-    
 end
 
-source $HOME/.config/dotfiles/fish/dotfiles.fish 
