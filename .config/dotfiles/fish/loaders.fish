@@ -1,6 +1,10 @@
 # Fix flatpak XDG_RUNTIME_DIR
 #test -e /etc/profile; and bass source /etc/profile
- 
+if test -e $HOME/.env
+   for env in (sed 's/#.*//g' $HOME/.env | envsubst | string match -r '.+');
+        export $env
+   end
+end 
 
 
 # Load asdf 

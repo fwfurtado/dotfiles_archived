@@ -4,7 +4,7 @@ keybinds:
     unbind: true
     normal:
         - action: [Detach,]
-          key: [Ctrl: 'q',]
+          key: [Ctrl: 'Q',]
         - action: [NewPane: Right ]
           key: [Ctrl: 'n',]
         - action: [NewPane: Down ]
