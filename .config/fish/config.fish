@@ -154,8 +154,6 @@ alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
 
 source $HOME/.config/dotfiles/fish/dotfiles.fish
-export PERSONAL_ACCESS_TOKEN=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
-
 
 ## Run paleofetch if session is interactive
 if status --is-interactive
