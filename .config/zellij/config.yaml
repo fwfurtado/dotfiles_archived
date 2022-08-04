@@ -4,11 +4,11 @@ keybinds:
     unbind: true
     normal:
         - action: [Detach,]
-          key: [Ctrl: 'Q',]
+          key: [Alt: 'Q',]
         - action: [NewPane: Right ]
-          key: [Ctrl: 'n',]
+          key: [Alt: 'N',]
         - action: [NewPane: Down ]
-          key: [Ctrl: 't',]          
+          key: [Alt: 'T',]          
         - action: [MoveFocusOrTab: Left,]
           key: [ Alt: 'Left',]
         - action: [MoveFocusOrTab: Right,]
@@ -28,7 +28,7 @@ keybinds:
         - action: [Resize: Decrease,]
           key: [ Alt: '-']
         - action: [MovePane: ,]
-          key: [ Alt: 'm', ]          
+          key: [ Alt: 'M', ]          
  
 
 
