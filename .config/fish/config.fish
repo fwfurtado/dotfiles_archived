@@ -157,9 +157,6 @@ source $HOME/.config/dotfiles/fish/dotfiles.fish
 
 ## Run paleofetch if session is interactive
 if status --is-interactive
-    if test -n "$GNOME_TERMINAL_SCREEN"
-      eval (zellij setup --generate-auto-start fish | string collect)
-    end
 
     if not test -f $HOME/.greet      
         touch $HOME/.greet
