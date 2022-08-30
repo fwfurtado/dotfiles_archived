@@ -6,6 +6,7 @@ import XMonad.Util.SpawnOnce
 import XMonad.Layout.Gaps
 import XMonad.Layout.Spacing
 import XMonad.Hooks.ManageDocks
+import XMonad.Layout.IndependentScreens
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
@@ -43,7 +44,7 @@ myModMask       = mod4Mask
 --
 -- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
 --
-myWorkspaces    = ["1","2","3","4","5","6","7","8","9"]
+myWorkspaces    = withScreens 2 ["1","2","3","4","5","6","7","8","9"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --

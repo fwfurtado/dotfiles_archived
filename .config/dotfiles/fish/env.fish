@@ -34,3 +34,6 @@ export ZELLIJ_AUTO_EXIT="true"
 
 fish_add_path $HOME/.ghcup/bin
 fish_add_path $HOME/.cabal/bin
+
+export LC_ALL=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
