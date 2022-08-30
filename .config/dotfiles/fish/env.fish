@@ -31,3 +31,6 @@ fish_add_path $HOME/Android/Sdk/tools
 #set -x DOCKER_HOST unix://$XDG_RUNTIME_DIR/podman/podman.socket
 
 export ZELLIJ_AUTO_EXIT="true"
+
+fish_add_path $HOME/.ghcup/bin
+fish_add_path $HOME/.cabal/bin
